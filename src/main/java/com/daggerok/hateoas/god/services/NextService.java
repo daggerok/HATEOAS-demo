@@ -1,14 +1,14 @@
-package software.sigma.switter.services;
+package com.daggerok.hateoas.god.services;
 
+import com.daggerok.hateoas.god.domain.Message;
+import com.daggerok.hateoas.god.infrastructure.HttpBuilder;
 import org.springframework.http.HttpEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import software.sigma.switter.domain.Message;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
-import static software.sigma.switter.infrastructure.HttpBuilder.buildResponseOk;
 
 /**
  * Created by mak on 4/23/15.
@@ -24,6 +24,6 @@ public class NextService {
 
         message.add(linkTo(methodOn(HomeService.class).home()).withSelfRel().withRel("prev"));
         message.add(linkTo(methodOn(OtherService.class).other()).withSelfRel().withRel("next"));
-        return buildResponseOk(message);
+        return HttpBuilder.buildResponseOk(message);
     }
 }

@@ -1,4 +1,4 @@
-package software.sigma.switter.infrastructure;
+package com.daggerok.hateoas.god.infrastructure;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;

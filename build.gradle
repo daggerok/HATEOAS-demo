@@ -16,7 +16,7 @@ apply plugin: "application"
 jar {
     baseName = "gs-rest-hateoas"
     version = "1.0"
-    mainClassName = "software.sigma.switter.SwitterApplication"
+    mainClassName = "com.daggerok.hateoas.god.GodApplication"
 }
 
 repositories {
