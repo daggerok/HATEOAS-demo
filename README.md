@@ -1,4 +1,4 @@
-# Are you cooler the God?
+# Are you cooler than God?
 
     $ gradle clean build bootRun
     
