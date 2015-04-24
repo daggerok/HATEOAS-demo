@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
  * Created by mak on 4/23/15.
  */
 public class HttpBuilder {
-    public static <T> HttpEntity<T> buildResponseOk(T entry) {
-        return new ResponseEntity<T>(entry, HttpStatus.OK);
+    public static <T> HttpEntity<T> buildResponseOk(T entity) {
+        return new ResponseEntity<T>(entity, HttpStatus.OK);
     }
 }
