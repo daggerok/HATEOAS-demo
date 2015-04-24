@@ -2,6 +2,6 @@
 
     $ gradle clean build bootRun
     
-    go to http:://localhost:8080
+    go on http://localhost:8080 to know
     
 ps: sorry for my English :)
