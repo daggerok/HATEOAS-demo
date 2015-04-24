@@ -19,7 +19,7 @@ public class OtherService {
     @ResponseBody
     @RequestMapping("/other")
     public HttpEntity<Message> other() {
-        Message message = new Message("you almost God, but if you don't think that you aren't cool enough " +
+        Message message = new Message("you almost God, but if you think that you aren't cool enough " +
                 "press 'next' to be coolest at all, otherwise tap 'prev' and go cry...");
 
         message.add(linkTo(methodOn(NextService.class).next()).withSelfRel().withRel("prev"));
