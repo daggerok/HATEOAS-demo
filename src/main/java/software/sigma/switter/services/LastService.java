@@ -19,7 +19,7 @@ public class LastService {
     @ResponseBody
     @RequestMapping("/last")
     public HttpEntity<Message> last() {
-        Message message = new Message("sorry, but you died =( seems like God cooler than you. But wait, " +
+        Message message = new Message("sorry, but you died =( seems like God cooler than you. but wait, " +
                 "you can try again, just tap on 'first'");
 
         message.add(linkTo(methodOn(HomeService.class).home()).withSelfRel().withRel("first"));
