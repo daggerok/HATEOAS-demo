@@ -1,6 +1,6 @@
 # Are you cooler than God?
 
-    $ gradle bootRun
+    $ ./gradlew bootRun
     
     go on http://localhost:8080 to know
     
