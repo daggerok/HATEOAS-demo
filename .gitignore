@@ -1,7 +1,5 @@
 **/bin/
 **/target/
-**/.gradle/
-**/gradle/
 **/.idea/
 **/build/
 **/*.iml
