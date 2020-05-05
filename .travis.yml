@@ -19,6 +19,7 @@ cache:
   directories:
     - ~/.gradle
 
+install: true
 before_script:
   - |
     if [ ! -f ${HOME}/.local/daggerok/bash-functions/master/main.bash ] ; then
