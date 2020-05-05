@@ -1,28 +1,27 @@
 buildscript {
-    repositories { jcenter() }
-    dependencies { classpath "org.springframework.boot:spring-boot-gradle-plugin:1.3.1.RELEASE" }
+    repositories { mavenCentral() }
+    ext { springBootVersion = "1.3.1.RELEASE" }
+    dependencies { classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion" }
 }
 
 apply plugin: "java"
-apply plugin: "eclipse"
 apply plugin: "idea"
 apply plugin: "spring-boot"
 apply plugin: "application"
 
 jar {
+    version = "1.0.1"
     baseName = "gs-rest-hateoas"
-    version = "1.0"
     mainClassName = "com.daggerok.hateoas.god.GodApplication"
 }
 
-repositories { jcenter() }
+repositories { mavenCentral() }
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("com.fasterxml.jackson.core:jackson-databind")
     compile("org.springframework.hateoas:spring-hateoas")
     compile("com.jayway.jsonpath:json-path")
-    
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
